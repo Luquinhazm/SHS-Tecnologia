@@ -24,7 +24,9 @@
     color: #000;
 }
 
-.navMenuItems{}
+.navMenuItems{
+    position: relative;
+}
 
 .navMenuItems:hover{
     color: rgb(10, 10, 73);
