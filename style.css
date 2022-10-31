@@ -352,11 +352,18 @@
     display: none;
    }
 
+   .resumeSection{
+    min-height: 95vh;
+   }
+
    .wrapperResume{
     flex-direction: column;
    }
 
    .textResume{
+    background: rgb(18,7,87);
+    background: linear-gradient(90deg, rgba(18,7,87,1) 0%,  rgba(255, 255, 255, 0) 100%);
+    border-radius: 6px;
     align-items: flex-start !important;
    }
 
@@ -496,6 +503,8 @@
     margin: 32px 0;
     display: flex;
     align-items: center;
+    gap: 16px;
+    justify-content: space-around;
 }
 
 .fa-star, .fa-mobile-screen, .fa-user{
@@ -513,7 +522,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 380px ;
-    width: 100%;
+    width: 90%;
     padding: 16px;
     gap: 8px;
 }
