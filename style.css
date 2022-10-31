@@ -104,8 +104,8 @@
 
     .textMainPage{
         font-size: 3.3rem !important;
-        padding: 5% !important;
-        
+        padding: 3% !important;
+
     }
 
  
@@ -142,8 +142,8 @@
 
 .textMainPage{
     color: #fff;
-    max-width: 460px;
-    width: 80%;
+    max-width: 1000px;
+    width: 95%;
     padding: 36px;
     font-size: 4.5rem;
     letter-spacing: 0.7px;
