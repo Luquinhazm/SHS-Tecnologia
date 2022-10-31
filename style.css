@@ -384,12 +384,36 @@
    }
 
    .infos-footer{
+    position: relative;
     flex-direction: column;
+    width: 100%;
+    margin: 32px 0 !important;
+   }
+
+   .address{
+    margin-left: 25%;
+   }
+   
+   .contact-footer{
+    margin-right: 25%;
    }
 
    .logo-footer{
     height: 60px !important ;
    }
+
+   .logoEmpresaSection{
+    height: 80px   !important;
+}
+.wrapperEmpresaSection{
+    flex-direction: column;
+    
+}
+
+.areaAbout{
+    border-top-right-radius: 0px  !important;
+    border-bottom-left-radius: 12px;
+}
 }
 
 .empresaSection{
@@ -398,6 +422,7 @@
     min-height: 80vh;
     justify-content: center;
     align-items: center;
+    margin: 38px 0;
 }
 
 .empresaSection::after{
@@ -431,7 +456,7 @@
 }
 
 .areaAbout{
-    width: 600px;
+    width: 100%;
     padding: 32px 24px;
     max-width: 600px;
     min-height: 60vh;
@@ -472,6 +497,11 @@
 
 }
 
+@media (max-width: 1100px){
+    .logoEmpresaSection{
+        height: 120px ;
+    }
+}
 
 .resumeSection{
     display: flex;
