@@ -165,7 +165,7 @@
     position: absolute;
     width: 100%;
     z-index: -999;
-    height: 15%;
+    height: 5%;
     background-color:#120757 ;
 }
 
@@ -355,6 +355,28 @@
    .wrapperResume{
     flex-direction: column;
    }
+
+   .textResume{
+    align-items: flex-start !important;
+   }
+
+   .textResume p{
+    text-align: start !important;
+   }
+
+   .titleAndSubtitle{
+    flex-direction: row !important ;
+    align-items: flex-end !important;
+   }
+
+   .text-contact{
+    align-items: flex-start !important;
+    margin-bottom: 18px;
+   }
+
+   .wrap-area-contato{
+    width: 100%;
+   }
 }
 
 .empresaSection{
@@ -448,6 +470,14 @@
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 1);
 }
 
+.titleAndSubtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
 .titleResumeSection{
     font-size: 2.2rem;
     padding: 8px;
@@ -483,6 +513,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 380px ;
+    width: 100%;
     padding: 16px;
     gap: 8px;
 }
@@ -491,6 +522,10 @@
     max-width: 80%;
     text-align: center;
     color: #fff;
+}
+
+.span-step{
+    text-transform: uppercase;
 }
 
 .Trabalho{
@@ -660,6 +695,8 @@
 @media (max-width: 1340px) {
     .text-contact{
         flex-direction: column;
+      
+        padding: 0% 8% !important;
     }
 }
 
