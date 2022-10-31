@@ -352,9 +352,7 @@
     display: none;
    }
 
-   .resumeSection{
-    min-height: 95vh;
-   }
+
 
    .wrapperResume{
     flex-direction: column;
