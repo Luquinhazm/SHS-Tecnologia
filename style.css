@@ -693,6 +693,7 @@
 .text-contact{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     max-width: 720px;
     width: 100%;
     padding: 0 5%;
