@@ -333,7 +333,7 @@
     }
     .wrapServicosLogos{
         display: flex;
-        width: 60%;
+        width: 100%;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 0 auto;
@@ -344,6 +344,11 @@
         width: 100%;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 28px;
+    }
+
+    .logoServico{
+        height: 50px;
+        width: 50px;
     }
 }
 
