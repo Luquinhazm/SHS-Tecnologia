@@ -4,12 +4,39 @@
     height: 72px;
 }
 
-.navBarra{
+.navBarraPC{
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 0 32px;
+    margin-top: 12px;
+}
+
+.navBarraMobile{
+    display: none;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5%;
+    align-items: center;
+}
+
+.buttonMenu{
+    display: flex;
+    right: 24px;
+    width: 34px;
+    height: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linhaButtonMenu{
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    border-radius: 12px;
 }
 
 .wrapperLogoHeader img{
@@ -19,9 +46,9 @@
 .navMenu{
     display: flex;
     gap: 22px;
-    width: 380px;
+    align-items: center;
     text-transform: uppercase;
-    color: #000;
+    color: #fff;
 }
 
 .navMenuItems{
@@ -29,7 +56,7 @@
 }
 
 .navMenuItems:hover{
-    color: rgb(10, 10, 73);
+    color: rgb(0, 55, 255);
 }
 
 .navMenuItems:hover:after{
@@ -47,45 +74,67 @@
     left: 0;
 }
 
-.wrapperButtonHeader{
-    width: 380px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.buttonOrçamento{
+.buttonOrcamento{
     position: relative;
     padding: 10px;
     border: 0;
     font-size: 1.1rem;
-    width: 180px;
-    background: linear-gradient(103.49deg, #000115 23.49%, #120757 69.85%, #000115 120.79%);
-    box-shadow: inset 0 0 0 0 rgb(16, 19, 212);
-    color: #fff;
+    color: rgb(0, 0, 0);
     border-radius: 4px;
-    margin-right: 5%;
     text-transform: uppercase;
     transition: ease-in-out 0.5s;
     font-weight: bold;
     letter-spacing: 0.8px;
 }
 
-.buttonOrçamento:hover{
-    box-shadow: inset 180px 0 0 0 rgb(5, 8, 133);
+.buttonOrcamento:hover{
+    box-shadow: inset 180px 0 0 0 rgb(17, 18, 52);
+    border-radius: 4px;
+    color: #fff;
+}
+
+@media ( max-width: 800px) {
+    .navBarraPC{
+        display: none;
+    }
+
+    .navBarraMobile{
+        display: flex;
+    }
+
+    .textMainPage{
+        font-size: 3rem !important;
+        padding: 5% !important;
+    }
+
+ 
 }
 
 .mainSection {
-    background-image: url(Assets/Global.jpeg);
+    position: relative;
+    min-height: 90vh;
+    /* background-image: url(Assets/Global.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 90vh;
-    background-position: 50% 50%;
+    
+    background-position: 50% 50%; */
+}
+
+.videoMain{
+    position: absolute;
+    top: -72px;
+    z-index: -11;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
 }
 
 .blurMainSection{
-    min-height: 90vh;
+    position: absolute;
+    top: -72px;
+    min-height: 100vh;
     width: 100%;
-    background-color: hsla(0, 0%, 0%, 0.30);
+    background-color: rgba(5, 41, 77, 0.315);
     display: flex;
     align-items: center;
 }
@@ -99,21 +148,35 @@
 }
 
 .textMainPage span {
-    color: rgb(0, 4, 255);
+    color: #add7f6;
 }
 
 .servicosSecao{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 38px;
-    
+    align-items: center;
+    min-height: 90vh; 
+}
+
+.servicosSecao::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: -999;
+    height: 5%;
+    background-color:#120757 ;
 }
 
 .areaServicosTotal{
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(103.49deg, #000115 23.49%, #120757 69.85%, #000115 120.79%);
+    border-radius: 28px;
+    height: 70vh ;
+    width: 95%;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.3);
 }
 
 .imageCabos{
@@ -126,22 +189,107 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 36px;
-    width: 600px;
+    padding: 24px 0 24px 36px;
+    gap: 44px;
+    width: 50%;
+    height: 100%;
 }
 
 .areaServico h2{
     text-transform: uppercase;
+    color: #fff;
+    font-size: 38px;
+    font-weight: bold;
 }
 
-.wrapTextoServicos{
+#cardCFTV{
+    display: block;
     max-width: 600px;
     width: 500px;
-    background-color: #fafafa;
-    padding: 12px;
+    padding: 12px 0;
+    color: #fafafa;
     border-radius: 8px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    opacity: 1;
+    -webkit-animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+}
+
+@keyframes scale-in {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+
+@keyframes scale-out {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+}
+
+
+#cardFibra{
+    display: none;
+    max-width: 600px;
+    width: 500px;
+    color: #fafafa;
+    padding: 12px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    opacity: 1;
+    -webkit-animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+}
+#cardOrganizacao{
+    display: none;
+    max-width: 600px;
+    width: 500px;
+    color: #fafafa;
+    padding: 12px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    opacity: 1;
+    -webkit-animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+}
+#cardCabeamento{
+    display: none;
+    max-width: 600px;
+    width: 500px;
+    color: #fafafa;
+    padding: 12px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    opacity: 1;
+    -webkit-animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+}
+
+.clicado{
+    background-color: #2f00ff;
+    border-radius: 8px;
+}
+
+.video{
+    height: 70vh ;
+    width: 50%;
+    object-fit: cover;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
 }
 
 .subtitleServicos{
@@ -155,14 +303,13 @@
     bottom: -5%;
     left: 2%;
     z-index: 0;
-    background-color: rgba(31, 20, 105, 0.336);
+    /* background-color: rgba(31, 20, 105, 0.336); */
     width:  55%;
     height: 50%;
 }
 
 .wrapServicosLogos{
     display: flex;
-    justify-content: center;
     gap: 32px;
 }
 
@@ -175,40 +322,58 @@
 }   
 
 .logoServico:hover{
-    background-color: rgba(31, 20, 105, 0.336);
+    background-color: rgba(31, 20, 105);
     border-radius: 8px;
 }
 
 .empresaSection{
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    min-height: 80vh;
     justify-content: center;
+    align-items: center;
 }
 
+.empresaSection::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: -999;
+    height: 30%;
+    background: linear-gradient(45deg, #000115 23.49%, #120757 69.85%, #000115 120.79%);
+}
+
+
 .empresaSection h2{
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 16px 0;
     text-transform: uppercase;
     font-weight: 600;
+
 }
 
 .wrapperEmpresaSection{
     display: flex;
-    width: 100%;
+    width: 95%;
     align-items: center;
-    justify-content: space-around;
-    margin: 6px 0;
-    min-height: 60vh
+    justify-content: space-between;
+    min-height: 60vh;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+    
 }
 
 .areaAbout{
     width: 600px;
     padding: 32px 24px;
     max-width: 600px;
-    background-color: #fafafa;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    min-height: 60vh;
+    background: linear-gradient(103.49deg, #000115 23.49%, #120757 69.85%, #000115 120.79%);
+    color: #fff;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+   
 }
 
 .wrapperAboutText{
@@ -223,23 +388,22 @@
     display: flex;
 }
 
-.titleAreaAbout::after{
-    position: absolute;
-    content: "" ;
-    bottom: 17px;
-    left: 2%;
-    z-index: 0;
-    background-color: rgba(31, 20, 105, 0.336);
-    width:  33%;
-    height: 25%;
-}
+
 
 .aboutText{
     font-size: 1rem;
 }
 
+.logoWrap{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0px auto;
+}
+
 .logoEmpresaSection{
-    height: 220px;
+    height: 180px;
+
 }
 
 
@@ -250,6 +414,7 @@
     align-items: center;
     background: linear-gradient(103.49deg, #000115 23.49%, #120757 69.85%, #000115 120.79%);
     color: #fff;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 1);
 }
 
 .titleResumeSection{
@@ -302,7 +467,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 24px 0;
+    padding: 48px 0;
 }
 
 .infoTrabalho{
@@ -328,38 +493,23 @@
     position: relative;
 }
 
-.titleTrabalho h2::after{
-    position: absolute;
-    content: "" ;
-    bottom: 10%;
-    left: 2%;
-    z-index: 0;
-    background-color: rgba(31, 20, 105, 0.336);
-    width:  100%;
-    height: 35%;
-}
+
 
 .titleTrabalho h3{
     font-size: 24px;
     position: relative;
 }
 
-.titleTrabalho h3::after{
-    position: absolute;
-    content: "" ;
-    bottom: 8%;
-    left: 2%;
-    z-index: 0;
-    background-color: rgba(31, 20, 105, 0.336);
-    width:  105%;
-    height: 35%;
-}
+
 
 
 
 .WrapTrabalhoText{
     display: flex;
     gap: 8px;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.3);
 }
 
 .TrabalhoText{
@@ -370,6 +520,8 @@
 .logoESA{
     width: 220px;
 }
+
+
 
 #carouselExampleControls{
     position: relative;
@@ -442,21 +594,22 @@
 }
 
 .btn-faq{
-    max-width: 570px;
+    max-width: 580px;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border: none;
-    border-radius: 50px;
-    margin: 16px auto ;
+    border-radius: 12px;
+    margin: 10px auto ;
     font-weight: 600;
     text-transform: uppercase;
     text-align: left;
-    padding: 10px 30px;
+    padding: 0px 16px;
     line-height: 16px;
+    background-color: #fff;
 }
 
 .btn-faq:hover{
-    background-color: rgba(255, 255, 255, 0.644);
+    background-color: rgb(255, 255, 255);
 }
 
 .faq-answer{
@@ -633,3 +786,4 @@ input::placeholder, textarea::placeholder{
     color: rgb(255, 255, 255);
     margin-bottom: 25px;
 }
+

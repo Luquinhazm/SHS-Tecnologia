@@ -23,78 +23,91 @@
 
 <body>
 	<header class="headerPrincipal">
-		<nav class="navBarra">
+		<nav class="navBarraPC">
 			<ul class="navMenu">
+				<li class="wrapperLogoHeader">
+					<a href="#"><img src="Assets/SHS.png" alt="Logo da SHS"></a>
+				</li>
 				<li><a href="" class="navMenuItems">Empresa</a></li>
 				<li><a href="" class="navMenuItems">Serviços</a></li>
 				<li><a href="" class="navMenuItems">Perguntas Frequentes</a></li>
 			</ul>
+			<div class="wrapperButtonHeader">
+				<button class="buttonOrcamento">
+					Orçamento
+				</button>
+			</div>
+		</nav>
+		<nav class="navBarraMobile">
 			<div class="wrapperLogoHeader">
 				<a href="#"><img src="Assets/SHS.png" alt="Logo da SHS"></a>
 			</div>
-			<div class="wrapperButtonHeader">
-				<button class="buttonOrçamento">
-					Orçamento
-				</button>
+			<div class="buttonMenu">
+				<div class="linhaButtonMenu"></div>
+				<div class="linhaButtonMenu"></div>
+				<div class="linhaButtonMenu"></div>
 			</div>
 		</nav>
 	</header>
 
 	<main class="mainSection">
+		<video src="Assets/World.mp4" autoplay="true" loop preload="auto" muted class="videoMain"></video>
 		<div class="blurMainSection">
 				<h1 class="textMainPage">Estamos construindo o <span>futuro</span> juntos</h1>
 		</div>
 	</main>
 
-	<section class="servicosSecao">
+	<!-- <section class="servicosSecao">
 
 		<div class="areaServicosTotal">
 
 			<div class="areaServico">
-				<h2>Confira nossos serviços</h2>
-				<div class="wrapTextoServicos">
-					<h3 class="subtitleServicos">Lorem, ipsum dolor.</h3>
-					<p class="textoServicos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet, illo
+
+
+				<div class="wrapTextoServicos" id="cardCFTV">
+					<h3 class="subtitleServicos" id="subTitleCFTV">Instalação de Sistemas CFTV</h3>
+					<p class="textoServicos" id="textCFTV">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet, illo
+						pariatur praesentium nam provident! Quisquam, eaque quia veritatis soluta laborum beatae voluptate fugit
+						harum tempore debitis fugiat libero reprehenderit?</p>
+				</div>
+
+				<div class="wrapTextoServicos" id="cardFibra">
+					<h3 class="subtitleServicos" id="subTitleFibra">Serviços de Fibra Optica</h3>
+					<p class="textoServicos" id="textServicosFibra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet, illo
+						pariatur praesentium nam provident! Quisquam, eaque quia veritatis soluta laborum beatae voluptate fugit
+						harum tempore debitis fugiat libero reprehenderit?</p>
+				</div>
+
+				<div class="wrapTextoServicos" id="cardOrganizacao">
+					<h3 class="subtitleServicos" id="subTitleOrganizacao">Padronização de Data Centers</h3>
+					<p class="textoServicos" id="textServicosOrganizacao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet, illo
+						pariatur praesentium nam provident! Quisquam, eaque quia veritatis soluta laborum beatae voluptate fugit
+						harum tempore debitis fugiat libero reprehenderit?</p>
+				</div>
+
+				<div class="wrapTextoServicos" id="cardCabeamento">
+					<h3 class="subtitleServicos" id="subTitleCabeamento">Cabeamento Estruturado</h3>
+					<p class="textoServicos" id="textServicosCabeamento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet, illo
 						pariatur praesentium nam provident! Quisquam, eaque quia veritatis soluta laborum beatae voluptate fugit
 						harum tempore debitis fugiat libero reprehenderit?</p>
 				</div>
 
 				<figure class="wrapServicosLogos">
-					<img src="Assets/CFTV.png" alt="Camera de segurança" class="logoServico">
-					<img src="Assets/fibraoptica.png" alt="Cabo de fibra Optica" class="logoServico">
-					<img src="Assets/organizacaodecpd.png" alt="Servidor e Storage" class="logoServico">
-					<img src="Assets/rede.png" alt="Redes de computadores" class="logoServico">
+					<img src="Assets/CFTV.svg" alt="Camera de segurança" class="logoServico clicado" id="iconCFTV">
+					<img src="Assets/fibraoptica.svg" alt="Cabo de fibra Optica" class="logoServico" id="iconFibra">
+					<img src="Assets/organizacaodecpd.svg" alt="Servidor e Storage" class="logoServico"
+					id="iconOrganizacao">
+					<img src="Assets/rede.svg" alt="Redes de computadores" class="logoServico" 
+					id="iconCabeamento">
 				</figure>
+
 			</div>
+			<video src="Assets/Pexels Videos 1085656 (2) (2).mp4" class="video" autoplay="true" loop preload="auto" muted></video>
 
-			<figure>
-				<img src="Assets/blue-optic-fiber-with-ethernet-cables.jpg" alt="" class="imageCabos">
-			</figure>
+		</div>   
+	</section> -->
 
-		</div>
-	</section>
-
-	<section class="empresaSection">
-		<div class="wrapperEmpresaSection">
-			<figure>
-				<img src="Assets/SHSNEWLOGO.png" alt="Logo da SHS" class="logoEmpresaSection">
-			</figure>
-			<div class="areaAbout">
-				<h2 class="titleAreaAbout">Sobre nós</h2>
-				<div class="wrapperAboutText">
-					<p class="aboutText">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt eveniet ad quos temporibus ut
-						perspiciatis earum facilis perferendis sunt aspernatur beatae inventore itaque repellat, quia magnam
-						veniam incidunt debitis quasi! Nobis dolorum ad in, aut fugiat quo! Veniam, laboriosam! Lorem, ipsum dolor
-						sit amet consectetur adipisicing elit. Modi nesciunt eveniet ad quos temporibus ut perspiciatis earum
-						facilis perferendis sunt aspernatur beatae inventore itaque
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="resumeSection">
+	<!-- <section class="resumeSection">
 		<h2 class="titleResumeSection">Como trabalhamos</h2>
 		<p class="subTitleResumeSection"></p>
 		<div class="wrapperResume">
@@ -121,9 +134,29 @@
 			</div>
 		</div>
 
-	</section>
+	</section> -->
 
-	<section class="Trabalho">
+	<!-- <section class="empresaSection">
+		<div class="wrapperEmpresaSection">
+			<figure class="logoWrap">
+				<img src="Assets/SHSNEWLOGO.png" alt="Logo da SHS" class="logoEmpresaSection">
+			</figure>
+			<div class="areaAbout">
+				<h2 class="titleAreaAbout">Sobre nós</h2>
+				<div class="wrapperAboutText">
+					<p class="aboutText">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt eveniet ad quos temporibus ut
+						perspiciatis earum facilis perferendis sunt aspernatur beatae inventore itaque repellat, quia magnam
+						veniam incidunt debitis quasi! Nobis dolorum ad in, aut fugiat quo! Veniam, laboriosam! Lorem, ipsum dolor
+						sit amet consectetur adipisicing elit. Modi nesciunt eveniet ad quos temporibus ut perspiciatis earum
+						facilis perferendis sunt aspernatur beatae inventore itaque
+					</p>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- <section class="Trabalho">
 		<div class="infoTrabalho">
 
 			<hgroup class="titleTrabalho">
@@ -131,7 +164,7 @@
 				<h3>ESA</h3>
 			</hgroup>
 
-			<figure>
+			<figure class="logo-wrap">
 				<img src="Assets/ESA/ESA-LOGO.png" alt="" class="logoESA">
 			</figure>
 
@@ -177,9 +210,9 @@
 
 
 
-	</section>
+	</section> -->
 
-	<section class="faq-section" id="faq">
+	<!-- <section class="faq-section" id="faq">
 		<div class="faq-container">
 			<h2>Suas Perguntas respondidas</h2>
 
@@ -194,7 +227,6 @@
 							<p>Trabalhamos com serviço de implementação de rede computadores, instalação de rack, pontos de acesso sem
 								fio, salas de auditório, obras e construção de pequenas e medias complexidades em geral, como construção
 								de novas salas
-								<!-- com serviço de alvenaria completo. Desde a planta até o acabamento final. -->
 							</p>
 						</div>
 					</div>
@@ -229,9 +261,9 @@
 
 			</div>
 		</div>
-	</section>
+	</section> -->
 
-	<section class="contact-section" id="contato">
+	<!-- <section class="contact-section" id="contato">
 
 		<div class="contato">
 			<div class="text-contact">
@@ -262,9 +294,9 @@
 			</form>
 		</div>
 
-	</section>
+	</section> -->
 
-	<footer class="section-footer">
+	<!-- <footer class="section-footer">
 		<div class="infos-footer">
 			<div class="address">
 				<span><i class="fa-solid fa-location-dot"></i> Endereço</span>
@@ -280,13 +312,14 @@
 			</div>
 		</div>
 		<span class="cnpj">CNPJ: 43.351.995/0001-48</span>
-	</footer>
+	</footer> -->
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
 		crossorigin="anonymous"></script>
 
 	<script src="https://kit.fontawesome.com/0af2f7e93b.js" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
 </body>
 
 </html>
