@@ -300,6 +300,7 @@
 
 .wrapServicosLogos{
     display: flex;
+    justify-content: space-around;
     gap: 10px;
     width: 100%;
 }
@@ -380,6 +381,14 @@
 
    .wrap-area-contato{
     width: 100%;
+   }
+
+   .infos-footer{
+    flex-direction: column;
+   }
+
+   .logo-footer{
+    height: 60px !important ;
    }
 }
 
