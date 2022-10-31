@@ -347,6 +347,14 @@
         height: 50px;
         width: 50px;
     }
+
+   #arrow-right{
+    display: none;
+   }
+
+   .wrapperResume{
+    flex-direction: column;
+   }
 }
 
 .empresaSection{
