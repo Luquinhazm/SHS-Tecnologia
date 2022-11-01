@@ -109,6 +109,11 @@
 
     }
 
+    .Trabalho{
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
  
 }
 
@@ -133,11 +138,12 @@
 
 .blurMainSection{
     position: absolute;
-    top: -72px;
+  
     min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
+  
 }
 
 .textMainPage{
@@ -577,6 +583,7 @@
 .Trabalho{
     display: flex;
     justify-content: space-around;
+    gap: 48px;
     align-items: center;
     padding: 48px 0;
 }
@@ -585,7 +592,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    max-width: 720px;
+    width: 95%;
     gap: 32px;
 }
 
@@ -612,9 +620,6 @@
 }
 
 
-
-
-
 .WrapTrabalhoText{
     display: flex;
     gap: 8px;
@@ -625,14 +630,13 @@
 
 .TrabalhoText{
     max-width: 480px;
+    width: 100%;
     padding: 8px;
 }
 
 .logoESA{
     width: 220px;
 }
-
-
 
 #carouselExampleControls{
     position: relative;
