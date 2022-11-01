@@ -409,7 +409,7 @@
    }
 
    .logoEmpresaSection{
-    height: 80px   !important;
+    height: 110px   !important;
 }
 .wrapperEmpresaSection{
     flex-direction: column;
@@ -421,6 +421,11 @@
     border-bottom-left-radius: 12px;
 }
 }
+
+
+
+
+
 
 .empresaSection{
     position: relative;
@@ -465,7 +470,6 @@
     width: 100%;
     padding: 32px 24px;
     max-width: 600px;
-    min-height: 60vh;
     background: linear-gradient(103.49deg, #000115 23.49%, #120757 69.85%, #000115 120.79%);
     color: #fff;
     border-top-right-radius: 12px;
