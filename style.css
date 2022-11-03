@@ -888,12 +888,12 @@ input::placeholder, textarea::placeholder{
         flex-direction: column;
     }
 
-
     .areaServico{
         width: 100%;
         padding: 5%;
         justify-content: center;
     }
+
     .wrapServicosLogos{
         display: flex;
         width: 100%;
@@ -978,6 +978,14 @@ input::placeholder, textarea::placeholder{
 .areaAbout{
     border-top-right-radius: 0px  !important;
     border-bottom-left-radius: 12px;
+}
+
+.cardsTrabalhos{
+    flex-direction: column;
+}
+
+.cardsTrabalhos::after{
+    right: 10%;
 }
 }
 
