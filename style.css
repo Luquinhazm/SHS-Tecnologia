@@ -4,6 +4,11 @@
     height: 72px;
 }
 
+.headerESA{
+    background-color: #120757;
+    height: 13vh;
+}
+
 .navBarraPC{
     display: flex;
     width: 100%;
@@ -11,6 +16,10 @@
     align-items: center;
     padding: 0 32px;
     margin-top: 12px;
+}
+
+.navBarraESA{
+    margin: 0;
 }
 
 .navBarraMobile{
@@ -94,37 +103,9 @@
     color: #fff;
 }
 
-@media ( max-width: 800px) {
-    .navBarraPC{
-        display: none;
-    }
-
-    .navBarraMobile{
-        display: flex;
-    }
-
-    .textMainPage{
-        font-size: 3.3rem !important;
-        padding: 3% !important;
-
-    }
-
-    .Trabalho{
-        flex-direction: column;
-        overflow-x: hidden;
-    }
-
- 
-}
-
 .mainSection {
     position: relative;
-    min-height: 90vh;
-    /* background-image: url(Assets/Global.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    background-position: 50% 50%; */
+    min-height: 90vh
 }
 
 .videoMain{
@@ -215,27 +196,6 @@
 
 }
 
-@keyframes scale-in {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-}
-
-@keyframes scale-out {
-    0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-    100% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-    }
-}
 
 
 #cardFibra{
@@ -250,6 +210,7 @@
 	animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 
 }
+
 #cardOrganizacao{
     display: none;
     max-width: 600px;
@@ -262,6 +223,7 @@
 	animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 
 }
+
 #cardCabeamento{
     display: none;
     max-width: 600px;
@@ -324,116 +286,14 @@
     border-radius: 8px;
 }
 
-@media (max-width: 768px){
-    .areaServicosTotal{
-        flex-direction: column;
-    }
-
-
-    .areaServico{
-        width: 100%;
-        padding: 5%;
-        justify-content: center;
-    }
-    .wrapServicosLogos{
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
-    .video{
-        min-height: 20vh;
-        height: 30vh;
-        width: 100%;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 28px;
-    }
-
-    .logoServico{
-        height: 50px;
-        width: 50px;
-    }
-
-   #arrow-right{
-    display: none;
-   }
-
-
-   .wrapperResume{
-    flex-direction: column;
-   }
-
-   .textResume{
-    background: rgb(18,7,87);
-    background: linear-gradient(90deg, rgba(18,7,87,1) 0%,  rgba(255, 255, 255, 0) 100%);
-    border-radius: 6px;
-    align-items: flex-start !important;
-   }
-
-   .textResume p{
-    text-align: start !important;
-   }
-
-   .titleAndSubtitle{
-    flex-direction: row !important ;
-    align-items: flex-end !important;
-   }
-
-   .text-contact{
-    align-items: flex-start !important;
-    margin-bottom: 18px;
-   }
-
-   .wrap-area-contato{
-    width: 100%;
-   }
-
-   .infos-footer{
-    position: relative;
-    flex-direction: column;
-    width: 100%;
-    margin: 32px 0 !important;
-   }
-
-   .address{
-    margin-left: 25%;
-   }
-   
-   .contact-footer{
-    margin-right: 25%;
-   }
-
-   .logo-footer{
-    height: 60px !important ;
-   }
-
-   .logoEmpresaSection{
-    height: 110px   !important;
-}
-.wrapperEmpresaSection{
-    flex-direction: column;
-    
-}
-
-.areaAbout{
-    border-top-right-radius: 0px  !important;
-    border-bottom-left-radius: 12px;
-}
-}
-
-
-
-
 
 
 .empresaSection{
     position: relative;
     display: flex;
-    min-height: 80vh;
+    min-height: 87vh;
     justify-content: center;
     align-items: center;
-    margin: 38px 0;
 }
 
 .empresaSection::after{
@@ -444,7 +304,6 @@
     height: 30%;
     background: linear-gradient(45deg, #000115 23.49%, #120757 69.85%, #000115 120.79%);
 }
-
 
 .empresaSection h2{
     font-size: 3rem;
@@ -474,7 +333,7 @@
     color: #fff;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-   
+    min-height: 60vh;
 }
 
 .wrapperAboutText{
@@ -489,8 +348,6 @@
     display: flex;
 }
 
-
-
 .aboutText{
     font-size: 1rem;
 }
@@ -504,14 +361,8 @@
 
 .logoEmpresaSection{
     height: 180px;
-
 }
 
-@media (max-width: 1100px){
-    .logoEmpresaSection{
-        height: 120px ;
-    }
-}
 
 .resumeSection{
     display: flex;
@@ -587,9 +438,9 @@
 .Trabalho{
     display: flex;
     justify-content: space-around;
+    min-height: 87vh;
     gap: 48px;
     align-items: center;
-    padding: 48px 0;
 }
 
 .infoTrabalho{
@@ -615,8 +466,6 @@
     font-size: 36px;
     position: relative;
 }
-
-
 
 .titleTrabalho h3{
     font-size: 24px;
@@ -663,7 +512,6 @@
     width: 320px;
 }
 
-
 .carousel-item {
     max-height: 480px;
 }
@@ -673,6 +521,100 @@
     max-height: 480px;
 }
 
+.TrabalhosFeitos{
+    display: flex;
+    flex-direction: column;
+    padding: 42px 36px;
+    gap: 38px;
+    min-height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.trabalhosTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cardsTrabalhos{
+    display: flex;
+    gap: 24px;
+    position: relative;
+}
+
+.cardsTrabalhos::after{
+    content: "";
+    position: absolute;
+    bottom: 25%;
+    width: 80%;
+    height: 50%;
+    z-index: -11;
+    background-color: #120757;
+}
+
+.cardESA{
+    display: flex;
+    width: 360px;
+    gap: 16px;
+    flex-direction: column;
+    background: linear-gradient(103.49deg, #000115 23.49%, #120757 69.85%, #000115 120.79%);
+    color: #fff;
+    padding: 24px ;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.containerCardESA{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+
+}
+
+.containerCardESA p{
+    text-align: center;
+}
+
+.wrapperDescricao{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.cardESA h2{
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.cardESA .buttonVejaMais {
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    border: 0;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.buttonVejaMais:hover{
+    background-color: #120757;
+    color: #fff;
+}
+
+.logoESACard{
+    height: 150px;
+    width: 150px;
+}
 
 .faq-section{
     display: flex;
@@ -746,27 +688,6 @@
     background: linear-gradient(103.49deg, #000115 23.49%, #120757 69.85%, #000115 120.79%);
 }
 
-@media (max-width: 1340px) {
-    .text-contact{
-        flex-direction: column;
-      
-        padding: 0% 8% !important;
-    }
-}
-
-@media (max-width: 640px) {
-  .contato{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .image-contact{
-    height: 50% !important;
-    width: 50%  !important;
-    margin-bottom: 18px;
-  }
-  
-}
 
 .contato{
     display: flex;
@@ -924,3 +845,174 @@ input::placeholder, textarea::placeholder{
     margin-bottom: 25px;
 }
 
+
+@media (max-width: 1340px) {
+    .text-contact{
+        flex-direction: column;
+      
+        padding: 0% 8% !important;
+    }
+}
+
+@media (max-width: 1100px){
+    .logoEmpresaSection{
+        height: 120px ;
+    }
+}
+
+@media ( max-width: 800px) {
+    .navBarraPC{
+        display: none;
+    }
+
+    .navBarraMobile{
+        display: flex;
+    }
+
+    .textMainPage{
+        font-size: 3.3rem !important;
+        padding: 3% !important;
+
+    }
+
+    .Trabalho{
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+ 
+}
+
+@media (max-width: 768px){
+    .areaServicosTotal{
+        flex-direction: column;
+    }
+
+
+    .areaServico{
+        width: 100%;
+        padding: 5%;
+        justify-content: center;
+    }
+    .wrapServicosLogos{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    .video{
+        min-height: 20vh;
+        height: 30vh;
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 28px;
+    }
+
+    .logoServico{
+        height: 50px;
+        width: 50px;
+    }
+
+   #arrow-right{
+    display: none;
+   }
+
+
+   .wrapperResume{
+    flex-direction: column;
+   }
+
+   .textResume{
+    background: rgb(18,7,87);
+    background: linear-gradient(90deg, rgba(18,7,87,1) 0%,  rgba(255, 255, 255, 0) 100%);
+    border-radius: 6px;
+    align-items: flex-start !important;
+   }
+
+   .textResume p{
+    text-align: start !important;
+   }
+
+   .titleAndSubtitle{
+    flex-direction: row !important ;
+    align-items: flex-end !important;
+   }
+
+   .text-contact{
+    align-items: flex-start !important;
+    margin-bottom: 18px;
+   }
+
+   .wrap-area-contato{
+    width: 100%;
+   }
+
+   .infos-footer{
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    margin: 32px 0 !important;
+   }
+
+   .address{
+    margin-left: 25%;
+   }
+   
+   .contact-footer{
+    margin-right: 25%;
+   }
+
+   .logo-footer{
+    height: 60px !important ;
+   }
+
+   .logoEmpresaSection{
+    height: 110px   !important;
+}
+.wrapperEmpresaSection{
+    flex-direction: column;
+    
+}
+
+.areaAbout{
+    border-top-right-radius: 0px  !important;
+    border-bottom-left-radius: 12px;
+}
+}
+
+@media (max-width: 640px) {
+  .contato{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-contact{
+    height: 50% !important;
+    width: 50%  !important;
+    margin-bottom: 18px;
+  }
+  
+}
+
+@keyframes scale-in {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+
+@keyframes scale-out {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+}
