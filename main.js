@@ -8,8 +8,11 @@ const btnFibra = document.getElementById('iconFibra')
 const btnCFTV = document.getElementById('iconCFTV')
 const btnOrganizacao = document.getElementById('iconOrganizacao')
 const btnCabeamento = document.getElementById('iconCabeamento')
+const btnMenu = document.getElementById('buttonMenu')
+const btnClose = document.getElementById('buttonClose')
 
-
+btnMenu.addEventListener('click', abrirMenu)
+btnClose.addEventListener('click', abrirMenu)
 btnFibra.addEventListener('click', mudarCardFibra )
 btnCFTV.addEventListener('click', mudarCardCFTV )
 btnOrganizacao.addEventListener('click', mudarCardOrganizacao )
@@ -83,6 +86,7 @@ function mudarCardOrganizacao(){
         btnOrganizacao.classList.add('clicado')
     }
 }
+
 function mudarCardCabeamento(){
     const actualStyleCardFibra = getComputedStyle(cardFibra).display
     const actualStyleCardOrganizacao = getComputedStyle(cardOrganizacao).display
@@ -103,5 +107,16 @@ function mudarCardCabeamento(){
         btnCFTV.classList.remove('clicado')
         cardCabeamento.style.display = 'block'
         btnCabeamento.classList.add('clicado')
+    }
+}
+
+function abrirMenu(){
+    const menuMobile = document.getElementById('menuMobile')
+    const styleMenuMobile = getComputedStyle(menuMobile).display
+
+    if(styleMenuMobile === 'none'){
+        menuMobile.style.display = 'flex'
+    }else if(styleMenuMobile === 'flex'){
+        menuMobile.style.display = 'none'
     }
 }

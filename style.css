@@ -65,6 +65,33 @@
   position: relative;
 }
 
+.ScreenMenuMobile{
+    display: none;
+    position: absolute;
+    gap: 36px;
+    width: 100%;
+    z-index: 999;
+    background-color: #120757;
+    min-height: 90vh;
+    top: 0;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.ScreenMenuMobile ul{
+    display: flex ;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.fa-x{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
 .navMenuItems:hover {
   color: #fff;
 }
@@ -1006,6 +1033,10 @@ textarea::placeholder {
 
   .cardsTrabalhos::after {
     right: 10%;
+  }
+
+  .ScreenMenuMobile{
+    display: flex;
   }
 }
 
