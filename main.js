@@ -11,12 +11,26 @@ const btnCabeamento = document.getElementById('iconCabeamento')
 const btnMenu = document.getElementById('buttonMenu')
 const btnClose = document.getElementById('buttonClose')
 
+
+const btnLinksSobre = document.getElementById('linkBtnSobre')
+const btnLinksFAQ = document.getElementById('linkBtnFAQ')
+const btnLinksTrabalho = document.getElementById('linkBtnTrabalho')
+const btnLinksContato = document.getElementById('linkBtnContato')
+
+btnLinksSobre.addEventListener('click', abrirMenu)
+btnLinksFAQ.addEventListener('click', abrirMenu)
+btnLinksTrabalho.addEventListener('click', abrirMenu)
+btnLinksContato.addEventListener('click', abrirMenu)
+
 btnMenu.addEventListener('click', abrirMenu)
 btnClose.addEventListener('click', abrirMenu)
+
 btnFibra.addEventListener('click', mudarCardFibra )
 btnCFTV.addEventListener('click', mudarCardCFTV )
 btnOrganizacao.addEventListener('click', mudarCardOrganizacao )
 btnCabeamento.addEventListener('click', mudarCardCabeamento )
+
+
 
 function mudarCardFibra(){
     const actualStyleCardCFTV = getComputedStyle(cardCFTV).display
