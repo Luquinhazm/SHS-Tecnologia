@@ -81,6 +81,7 @@
 }
 
 .ScreenMenuMobile ul{
+    display: flex ;
     flex-direction: column;
     gap: 24px;
 }
@@ -1034,9 +1035,7 @@ textarea::placeholder {
     right: 10%;
   }
 
-  .ScreenMenuMobile{
-    display: flex;
-  }
+
 }
 
 @media (max-width: 640px) {
