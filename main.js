@@ -116,7 +116,11 @@ function abrirMenu(){
 
     if(styleMenuMobile === 'none'){
         menuMobile.style.display = 'flex'
+        document.documentElement.style.overflow = 'hidden'
+        document.body.scroll = 'no'
     }else if(styleMenuMobile === 'flex'){
         menuMobile.style.display = 'none'
+        document.documentElement.style.overflow = 'auto'
+        document.body.scroll = 'yes'
     }
 }
