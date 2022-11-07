@@ -24,7 +24,7 @@ body{
   background-color: #fff;
   overflow-x: hidden;
   position: relative;
-  
+  scroll-behavior: smooth;
 }
 
 p{
