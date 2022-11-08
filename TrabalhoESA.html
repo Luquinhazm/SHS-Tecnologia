@@ -13,6 +13,21 @@
       content="ESA, Escola de Sargentos de Armas, SHS, SHS tecnologia, Cabeamento Estruturado, Data Center, Organização de cabos, redes, redes de internet, Rack de informática, rack, switch, roteador"
     />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TB8TN64L31"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TB8TN64L31");
+    </script>
+
     <title>ESA | SHS Tecnologia</title>
 
     <link
@@ -41,12 +56,20 @@
               ><img src="Assets/SHSBranca.png" alt="Logo da SHS"
             /></a>
           </li>
-          <li><a href="" class="navMenuItems">Empresa</a></li>
-          <li><a href="" class="navMenuItems">Serviços</a></li>
-          <li><a href="" class="navMenuItems">Perguntas Frequentes</a></li>
+          <li><a href="sobreNos.html" class="navMenuItems">Sobre Nós</a></li>
+          <li>
+            <a href="index.html#trabalhosRealizados" class="navMenuItems"
+              >Trabalhos Realizados</a
+            >
+          </li>
+          <li>
+            <a href="index.html#faq" class="navMenuItems"
+              >Perguntas Frequentes</a
+            >
+          </li>
         </ul>
         <div class="wrapperButtonHeader">
-          <button class="buttonOrcamento">Orçamento</button>
+          <a href="index.html#contato" class="buttonOrcamento">Orçamento</a>
         </div>
       </nav>
       <nav class="navBarraMobile">
@@ -62,8 +85,6 @@
         </div>
       </nav>
     </header>
-
-   
 
     <main class="Trabalho">
       <div class="infoTrabalho">
@@ -144,6 +165,5 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-
   </body>
 </html>
