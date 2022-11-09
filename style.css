@@ -559,7 +559,9 @@
 }
 
 .carousel-item img {
-  max-height: 480px;
+  height: 480px;
+  
+  object-fit: cover;
 }
 
 .TrabalhosFeitos {
