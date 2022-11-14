@@ -554,6 +554,10 @@
   width: 320px;
 }
 
+.carousel-width{
+  width: 600px;
+}
+
 .carousel-item {
   max-height: 480px;
 }
